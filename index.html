@@ -1,234 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NITIN MURAKA</title>
-
-<!-- Non-blocking Font Awesome Icons Load -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
-
-<style>
-/* Reset & High-Performance Fonts */
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #f1f5f9;
-  background: #0f0a05;
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* Glowing Ambient Background */
-body::before, body::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(120px);
-  z-index: 0;
-  pointer-events: none;
-}
-body::before {
-  width: 280px;
-  height: 280px;
-  background: #f5b942;
-  top: 5%;
-  left: 10%;
-  opacity: 0.15;
-}
-body::after {
-  width: 320px;
-  height: 320px;
-  background: #e8871e;
-  bottom: 5%;
-  right: 10%;
-  opacity: 0.12;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 420px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Glassmorphism Card Container */
-.card {
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 24px;
-  padding: 32px 24px;
-  text-align: center;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-
-/* Profile Glow Outer */
-.profile-container {
-  position: relative;
-  width: 110px;
-  height: 110px;
-  margin: 0 auto 16px;
-}
-.profile-container::before {
-  content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #f5b942, #e8871e);
-  filter: blur(8px);
-  opacity: 0.6;
-}
-.profile {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 28px;
-  object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  background: #3a2a14;
-}
-
-h1 {
-  font-size: 22px;
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: -0.5px;
-  margin-bottom: 6px;
-}
-
-.subtitle {
-  font-size: 13px;
-  color: #94a3b8;
-  margin-bottom: 22px;
-}
-
-/* Key Stats Grid */
-.grid-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-bottom: 22px;
-}
-.grid-item {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  padding: 10px 6px;
-  border-radius: 12px;
-  font-size: 11px;
-  color: #cbd5e1;
-}
-.grid-item strong {
-  display: block;
-  color: #f5b942;
-  font-size: 13px;
-  margin-bottom: 2px;
-}
-
-/* Feature List */
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: left;
-}
-.feature-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: rgba(255, 255, 255, 0.02);
-  padding: 10px 14px;
-  border-radius: 12px;
-  font-size: 13px;
-  color: #e2e8f0;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-}
-.feature-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  flex-shrink: 0;
-}
-
-/* Call to Action Button */
-.cta-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  padding: 16px;
-  margin-bottom: 22px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #f5b942 0%, #e8871e 100%);
-  color: #0f0a05;
-  font-size: 15px;
-  font-weight: 800;
-  text-decoration: none;
-  letter-spacing: 0.3px;
-  box-shadow: 0 10px 25px rgba(245, 185, 66, 0.3);
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
-  cursor: pointer;
-}
-.cta-btn:active { transform: scale(0.98); }
-
-/* Advertiser Credit */
-.advertiser {
-  margin-top: 16px;
-  font-size: 11px;
-  color: #64748b;
-  text-align: center;
-  letter-spacing: 0.3px;
-}
-.advertiser a {
-  color: #f5b942;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(245, 185, 66, 0.35);
-  padding-bottom: 1px;
-}
-.advertiser a:hover { border-bottom-color: #f5b942; }
-
-/* Footer Disclaimer */
-.disclaimer {
-  margin-top: 20px;
-  font-size: 11px;
-  line-height: 1.6;
-  color: #475569;
-  text-align: center;
-  padding: 0 8px;
-}
-
-@media (max-width: 480px) {
-  .card { padding: 26px 18px; }
-  h1 { font-size: 20px; }
-  .cta-btn { font-size: 14px; padding: 14px; }
-}
-</style>
-<!-- Meta Pixel Code -->
+  <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -238,82 +12,200 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1544824996854697');
+fbq('init', '1110037261574475');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1544824996854697&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1110037261574475&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VIP Trader</title>
+<style>
+  :root {
+    --bg: #0f1729;
+    --card: #1c2436;
+    --border: #2e3850;
+    --text: #ffffff;
+    --muted: #9aa3b5;
+    --accent: #22c55e;
+    --btn-from: #5b6cf0;
+    --btn-to: #0ab4d6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { min-height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  .card {
+    width: 100%;
+    max-width: 440px;
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 32px;
+    padding: 40px 24px 36px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,.35);
+  }
+  /* ===== Animated logo hero ===== */
+  .hero {
+    display: flex; align-items: center; justify-content: center;
+    gap: 12px;
+    margin: 0 auto 26px;
+  }
+  .logo-wrap { position: relative; width: 148px; height: 148px; flex: none; }
+  .logo {
+    position: relative; z-index: 2;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    overflow: hidden;
+    background: #000;
+    animation: breathe 3.2s ease-in-out infinite;
+  }
+  .logo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.1); display: block; }
+
+  /* rotating gold + green ring */
+  .ring {
+    position: absolute; z-index: 1; inset: -9px; border-radius: 50%;
+    background: conic-gradient(from 0deg, #f5c542, rgba(245,197,66,0) 30%, #22c55e 55%, rgba(34,197,94,0) 80%, #f5c542);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+            mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+    animation: spin 4s linear infinite;
+  }
+  /* green pulse waves */
+  .pulse {
+    position: absolute; z-index: 0; inset: 0; border-radius: 50%;
+    border: 2px solid rgba(34,197,94,.7);
+    animation: ripple 3s ease-out infinite;
+  }
+  .pulse.p2 { animation-delay: 1.5s; }
+
+  /* live candlesticks on both sides */
+  .candles { display: flex; align-items: flex-end; gap: 5px; height: 96px; width: 44px; flex: none; }
+  .c {
+    position: relative; width: 7px; height: var(--h);
+    color: #22c55e;
+    transform-origin: bottom center;
+    animation: grow var(--t) ease-in-out var(--d) infinite;
+  }
+  .c::before { content: ""; position: absolute; left: 50%; top: -9px; bottom: -7px; width: 2px; margin-left: -1px; background: currentColor; }
+  .c::after  { content: ""; position: absolute; inset: 0; background: currentColor; border-radius: 2px; }
+  .c.red   { color: #ef4444; }
+  .c.flip  { animation: grow var(--t) ease-in-out var(--d) infinite, flip calc(var(--t) * 2) steps(1) var(--d) infinite; }
+
+  @keyframes spin    { to { transform: rotate(360deg); } }
+  @keyframes breathe { 0%,100% { box-shadow: 0 0 14px rgba(245,197,66,.25); } 50% { box-shadow: 0 0 30px rgba(34,197,94,.55); } }
+  @keyframes ripple  { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.55); opacity: 0; } }
+  @keyframes grow    { 0%,100% { transform: scaleY(1); } 35% { transform: scaleY(1.45); } 70% { transform: scaleY(.7); } }
+  @keyframes flip    { 0% { color: #22c55e; } 50% { color: #ef4444; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .logo, .ring, .pulse, .c { animation: none !important; }
+    .pulse { display: none; }
+  }
+  h1 { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 18px; }
+  .lines p { font-size: 1.1rem; line-height: 1.6; color: #e7ebf3; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 17px 20px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--btn-from), var(--btn-to));
+    color: #fff; text-decoration: none;
+    font-size: 1.3rem; font-weight: 700;
+    box-shadow: 0 8px 24px rgba(10,180,214,.25);
+    transition: transform .15s ease;
+  }
+  .btn:active { transform: scale(.98); }
+  .btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .btn svg { width: 30px; height: 30px; flex: none; }
+  .redirect { margin-top: 22px; font-size: 1.05rem; color: var(--muted); min-height: 1.5em; }
+  .foot { max-width: 440px; margin-top: 28px; text-align: center; color: var(--muted); font-size: .9rem; line-height: 1.7; }
+  .foot b { color: var(--accent); font-weight: 700; font-size: 1.05rem; }
+  @media (max-width: 380px) {
+    h1 { font-size: 2rem; }
+    .lines p { font-size: 1rem; }
+    .btn { font-size: 1.15rem; }
+  }
+</style>
 </head>
 <body>
 
-<div class="wrapper">
-  <div class="card">
-
-    <!-- Profile Image (Add your image link below) -->
-    <div class="profile-container">
-      <img src="https://i.ibb.co/SDmTBJ71/logo.png" class="profile" alt="Profile Image" width="110" height="110" decoding="async" fetchpriority="high">
+<main class="card">
+  <div class="hero">
+    <div class="candles" aria-hidden="true">
+      <i class="c red flip"  style="--h:34px;--t:2.2s;--d:0s"></i>
+      <i class="c"           style="--h:48px;--t:2.7s;--d:.3s"></i>
+      <i class="c red"       style="--h:40px;--t:2.4s;--d:.9s"></i>
+      <i class="c flip"      style="--h:64px;--t:3s;--d:.5s"></i>
     </div>
-
-    <h1>𝗚𝗢𝗞𝗨𝗟 𝗖𝗛𝗛𝗔𝗕𝗥𝗔™</h1>
-    <p class="subtitle">Stock Market &amp; Financial Education</p>
-
-    <!-- Stat Grid -->
-    <div class="grid-highlights">
-      <div class="grid-item">
-        <strong>𝗗𝗮𝗶𝗹𝘆</strong> 𝗨𝗽𝗱𝗮𝘁𝗲𝘀
-      </div>
-      <div class="grid-item">
-        <strong>𝗙𝗿𝗲𝗲</strong> 𝗔𝗰𝗰𝗲𝘀𝘀
-      </div>
-      <div class="grid-item">
-        <strong>𝗟𝗶𝘃𝗲</strong> 𝗧𝗿𝗮𝗱𝗶𝗻𝗴
-      </div>
+    <div class="logo-wrap">
+      <span class="pulse" aria-hidden="true"></span>
+      <span class="pulse p2" aria-hidden="true"></span>
+      <span class="ring" aria-hidden="true"></span>
+      <div class="logo"><img src="https://i.ibb.co/RGP3GrWg/p2q-Hm-Kh-Xo9-NKn76h7-Qd-FKSQb6tl5u-SKZ1v-D-DHi-Rmo-Kf-T-da6-BZHSHzbp-AKe-IHdpo-Lg-Ue-iu-Epu0-Tjy-I6-Mdi.jpg" alt="VIP Trader Official"></div>
     </div>
-
-    <!-- Button (Add your link below) -->
-    <a class="cta-btn" id="telegramBtn" href="https://t.me/+PK7rkJ1pkts1ZjVl" rel="noopener noreferrer">
-      <i class="fab fa-telegram-plane" style="font-size:18px;"></i> 𝗝𝗢𝗜𝗡 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗚𝗥𝗢𝗨𝗣 <i class="fas fa-arrow-right" style="font-size:12px;"></i>
-    </a>
-
-    <!-- Features -->
-    <div class="features">
-      <div class="feature-item">
-        <div class="feature-icon" style="background:rgba(34,197,94,0.15); color:#22c55e;"><i class="fas fa-chart-line"></i></div>
-        <span>Daily 2-4 Call &amp; Tips Free</span>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon" style="background:rgba(56,189,248,0.15); color:#f5b942;"><i class="fas fa-book-open"></i></div>
-        <span>Last 6 Month No Loss</span>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon" style="background:rgba(251,113,133,0.15); color:#fb7185;"><i class="fas fa-bullseye"></i></div>
-        <span>Instant Notifications On Mobile</span>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon" style="background:rgba(250,204,21,0.15); color:#facc15;"><i class="fas fa-users"></i></div>
-        <span>24x7 Coustomer Support Avilable</span>
-      </div>
+    <div class="candles" aria-hidden="true">
+      <i class="c"           style="--h:60px;--t:2.6s;--d:.2s"></i>
+      <i class="c red flip"  style="--h:42px;--t:2.3s;--d:.8s"></i>
+      <i class="c"           style="--h:70px;--t:3.1s;--d:.1s"></i>
+      <i class="c red"       style="--h:50px;--t:2.5s;--d:.6s"></i>
     </div>
-
+  </div>
+  <h1 style="font-size:1.9rem; line-height:1.25;">𝗞𝗶𝗻𝗴 𝗢𝗳 𝗡𝗶𝗳𝘁𝘆<br><span style="font-size:1.3rem; color:#e7ebf3; font-weight:700;"></span></h1>
+  <div class="lines">
+    <p>Start Earning with Expert Calls 🔥</p>
+    <p>Trusted by 12,000+ Traders 🌍</p>
+    <p>Join our Channel for daily updates ✅</p>
   </div>
 
-  <!-- Advertiser Credit -->
-  <div class="advertiser">
-    Ads Managed By  <a href=https://t.me/+Yb8B9OfEz7Q5YTU9" target="_blank" rel="noopener noreferrer">Ads2laabh</a>
-  </div>
+  <a id="joinBtn" class="btn" href="#">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#fff"/><path fill="#3b82f6" d="M10.5 23.6l24.6-9.5c1.1-.4 2.1.3 1.7 1.9l-4.2 19.7c-.3 1.4-1.1 1.7-2.3 1.1l-6.4-4.7-3.1 3c-.3.3-.6.6-1.3.6l.5-6.5 11.8-10.7c.5-.5-.1-.7-.8-.3l-14.6 9.2-6.3-2c-1.4-.4-1.4-1.4.3-2.1z"/></svg>
+    <span>𝗝𝗼𝗶𝗻 𝗩𝗶𝗽 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺</span>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#fff"/><path fill="#3b82f6" d="M10.5 23.6l24.6-9.5c1.1-.4 2.1.3 1.7 1.9l-4.2 19.7c-.3 1.4-1.1 1.7-2.3 1.1l-6.4-4.7-3.1 3c-.3.3-.6.6-1.3.6l.5-6.5 11.8-10.7c.5-.5-.1-.7-.8-.3l-14.6 9.2-6.3-2c-1.4-.4-1.4-1.4.3-2.1z"/></svg>
+  </a>
 
-  <!-- Disclaimer -->
-  <div class="disclaimer">
-    <strong>Disclaimer:</strong> For educational purposes only. Not investment advice.
-Market investments are subject to risk. Please consult a SEBI-registered advisor before investing.
-  </div>
-</div>
+  <p class="redirect" id="redirect" aria-live="polite"></p>
+</main>
 
+<footer class="foot">
+  <p>This channel is for educational and informational purposes only.</p>
+</footer>
+
+<script>
+  // ====== YAHAN APNA TELEGRAM LINK DAALO ======
+  var TELEGRAM_LINK = "https://t.me/+VnG6p3Ru4gsyN2Nl";
+  var REDIRECT_SECONDS = 10;     // auto-redirect timer (0 = band)
+  // ============================================
+
+  var btn = document.getElementById("joinBtn");
+  var msg = document.getElementById("redirect");
+  btn.href = TELEGRAM_LINK;
+
+  var linkReady = TELEGRAM_LINK.indexOf("YOUR_CHANNEL") === -1;
+
+  if (REDIRECT_SECONDS > 0 && linkReady) {
+    var left = REDIRECT_SECONDS;
+    var tick = function () {
+      msg.textContent = "Redirecting in " + left + " seconds...";
+      if (left <= 0) { window.location.href = TELEGRAM_LINK; return; }
+      left--;
+      setTimeout(tick, 1000);
+    };
+    tick();
+  }
+</script>
 </body>
-</html>
-    
-  </body>
-  
 </html>
